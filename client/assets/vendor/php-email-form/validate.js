@@ -51,7 +51,7 @@
   });
 
   function php_email_form_submit(thisForm, formData) {
-    fetch("http://localhost:5000/api/v1/message", {
+    fetch("https://hoa-backend-production.up.railway.app/api/v1/message", {
       method: "POST",
       body: JSON.stringify(Object.fromEntries(formData)),
       headers: {
